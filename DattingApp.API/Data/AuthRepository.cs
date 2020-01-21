@@ -30,7 +30,6 @@ namespace DattingApp.API.Data
             await _context.SaveChangesAsync();
 
             return user;
-
         }
 
         private void CreatePassword(string password, out byte[] passwordHash, out byte[] passwordSalt)
