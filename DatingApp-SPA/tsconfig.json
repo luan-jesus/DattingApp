@@ -1,3 +1,4 @@
+// Arquivo de configuração do compilador de TypeScript
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -12,7 +13,8 @@
     "importHelpers": true,
     "target": "es2015",
     "typeRoots": [
-      "node_modules/@types"
+      "node_modules/@types",
+      "src/typings.d.ts"
     ],
     "lib": [
       "es2018",
