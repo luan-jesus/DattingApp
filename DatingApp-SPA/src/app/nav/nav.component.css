@@ -1,0 +1,7 @@
+.fa-user:before, .fa-sign-out::before {
+    margin-right: 10px;
+}
+
+.dropdown-toggle, .dropdown-item {
+    cursor: pointer;
+}
