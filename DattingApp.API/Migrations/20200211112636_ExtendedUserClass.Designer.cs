@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DattingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200210132832_ExtendedUserClass")]
+    [Migration("20200211112636_ExtendedUserClass")]
     partial class ExtendedUserClass
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,6 +74,9 @@ namespace DattingApp.API.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("KnownAs")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LookingFor")

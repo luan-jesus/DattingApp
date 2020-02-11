@@ -74,6 +74,9 @@ namespace DattingApp.API.Migrations
                     b.Property<string>("KnownAs")
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("LastActive")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("LookingFor")
                         .HasColumnType("TEXT");
 
