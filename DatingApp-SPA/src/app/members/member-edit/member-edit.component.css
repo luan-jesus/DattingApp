@@ -13,3 +13,12 @@
     background-color: #fff;
     border-top: none; 
 }
+
+.car-body div span {
+    color: #E95420;
+}
+
+.car-body div span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
