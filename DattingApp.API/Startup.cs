@@ -41,6 +41,7 @@ namespace DattingApp.API
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
             services.AddCors();
+            services.Configure<CloudnarySettings>(Configuration.GetSection("CloudnarySettings"));
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IDattingRepository, DattingRepository>();
             services.AddAutoMapper(typeof(DattingRepository).Assembly);

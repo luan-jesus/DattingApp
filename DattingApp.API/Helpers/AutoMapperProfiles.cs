@@ -1,3 +1,4 @@
+
 using System.Linq;
 using AutoMapper;
 using DattingApp.API.DTOs;
@@ -17,6 +18,8 @@ namespace DattingApp.API.Helpers
                 .ForMember(dest => dest.Age, opt => opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
             CreateMap<Photo, PhotoForDetailDTO>();
             CreateMap<UserForUpdateDTO, User>();
+            CreateMap<Photo, PhotoToReturnDTO>();
+            CreateMap<Photo, PhotoForCreationDTO>();
         }
     }
 }
